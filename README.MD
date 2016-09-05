@@ -1,7 +1,8 @@
-# **Code for _Bags of Local Convolutional Features for Scalable Instance Search_**
+# **Bags of Local Convolutional Features for Scalable Instance Search_**
 Authors: *Eva Mohedano, Amaia Salvador, Kevin McGuinnes, Xavier Giro-I-Nieto, Noel O'Connor and Ferran Marques.*
 
-Submitted to ICMR2016
+
+
 
 
 ## Description ##
