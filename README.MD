@@ -73,10 +73,11 @@ Please cite with the following Bibtex code:
  address = {New York, NY, USA},
  keywords = {bag of words, convolutional neural networks, instance retrieval},
 } 
+````
 
+## Code Instructions
 
-
-## Description
+### Description
 
 It contains scripts to build Bag of Visual Words based on local CNN features to perform instance search in three different datasets:
 
@@ -87,8 +88,8 @@ It contains scripts to build Bag of Visual Words based on local CNN features to 
 * Trecvid_subset: Subset of 23.614 keyframes/~13.000video shots from [TRECVid-INS](http://www-nlpir.nist.gov/projects/tv2015/) dataset. Keyframes extracted uniformly at 1/4fps. Queries and groundtruth correspond to [INS2013](http://www-nlpir.nist.gov/projects/tv2013/tv2013.html).
 
 
-Prerequisits
-------------
+### Prerequisits
+
 Python packages necessary specified in *requirements.txt* run:
 
 ```
@@ -110,12 +111,12 @@ It also needs:
 You can create a virtual enviroment to set the specific dependences of this project in an independent enviroment, without modifying your original python enviroment. Check [how to create a virtual enviroment](http://docs.python-guide.org/en/latest/dev/virtualenvs/). Using *--system-site-packages* flag when creating the venv will copy all the packages from your python installation. This will prevent you of re-installing packages in the new virtual enviroment that you have already installed. This will allow you to install only the new packages.
 
 
-## How to run it?
+### How to run it?
 
 *bow_pipeline* folder contain the main scripts. Parameters must be specified in the *settings.json* file located in the folder named as the dataset.
 
 
-### Step 1: FEATURE EXTRACTION (bow_pipeline/A_feature_extraction.py)
+#### Step 1: FEATURE EXTRACTION (bow_pipeline/A_feature_extraction.py)
 
 This script extracts features from a pre-trained CNN (by default the fully convolutional [VGG-16 network](https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md). It computers descriptors from the specified layer/s *Layer_output* parameter in a levelDB dataset in *featuresDB* paramenter in the *settings.json*, with the format [*featuresDB*]/[*layer*]_db.
 
@@ -123,7 +124,7 @@ This script extracts features from a pre-trained CNN (by default the fully convo
 Features are stored as the original dictionary created by the *Net* class from [caffe](http://caffe.berkeleyvision.org/). For reading, you should use the class *Local_Feature_ReaderDB* located in *bow_pipeline/reader.py*. This class contains methods to extract local features in the format (*n_samples*, *n_dimensions*)/image for BoW encoding. It also performs SumPooling, generating (*1*, *n_dimensions*)/image. It also contains methods to interpolate feature maps when reading. For more info in, check *bow_pipeline/reader.py* script.
 
 
-### Step 2: BUILDING VISUAL VOCABULARY (bow_pipeline/B_processing_clustering.py)
+#### Step 2: BUILDING VISUAL VOCABULARY (bow_pipeline/B_processing_clustering.py)
 
 It performs the clustering of the local features. It is necessary to set the
 following parameters:
@@ -139,7 +140,7 @@ pca_dim=512 -- dimensions when doing PCA
 It is necessary to specify the settings.json (different for each dataset, which contains paths for reading features/store models.
 
 
-### Step 3: ASSIGNMENTS AND INVERTED FILE GENERATION (bow_pipeline/C_bow_representation.py)
+#### Step 3: ASSIGNMENTS AND INVERTED FILE GENERATION (bow_pipeline/C_bow_representation.py)
 
 Once the visual vocabulary is build, we can compute the assignments based on the local features/image and we can index the dataset of images. It is necessary to set the following parameters (check the script):
 
@@ -152,7 +153,7 @@ new_dim -- tuple with the feature map dimension
 ```
 
 
-### Step 4: RANKINGS GENERATION (bow_pipeline/D_rankings_BoW.py)
+#### Step 4: RANKINGS GENERATION (bow_pipeline/D_rankings_BoW.py)
 
 It uses the inverted file generated and generates the rankigns for the queries. It computes the assignments for the query on-the-fly. It is necessary to set parameters as in Step 3, with the additional:
 
@@ -177,7 +178,7 @@ If using bow_pipeline/D_rankings_Pooling.py; Skip steps 2 and 3. The whole pipel
 *.txt* files are generated per query under *datasetFolder/lists_[bow/pooling]*.
 
 
-### Step 5: EVALUATION (bow_pipeline/evaluate_[Oxf_Par/trecvid].py)
+#### Step 5: EVALUATION (bow_pipeline/evaluate_[Oxf_Par/trecvid].py)
 
 It computes mean average precission for rankings generated in Step 4.
 
