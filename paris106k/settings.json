@@ -1,0 +1,30 @@
+{
+	"Feature_extractors":
+		{
+			"vgg16":{
+				"prototxt":"/home/eva/Workspace/icmr_pipeline/bow_pipeline/models/vgg_16/vgg16_pool5.prototxt",
+				"caffemodel": "/home/eva/Workspace/icmr_pipeline/bow_pipeline/models/vgg_16/VGG_ILSVRC_16_layers.caffemodel",
+				"meanValue":[103.939, 116.779, 123.68]
+                },
+
+			"vgg19":{
+				"prototxt":"/home/eva/Workspace/icmr_pipeline/bow_pipeline/models/vgg_19/vgg19_pool5.prototxt",
+				"caffemodel": "/home/eva/Workspace/icmr_pipeline/bow_pipeline/models/vgg_19/VGG_ILSVRC_19_layers.caffemodel",
+				"meanValue":[103.939, 116.779, 123.68]
+                }
+		},
+	"Feature_extractor":"vgg16",
+	"Layer_output":["conv5_1"],
+	"featuresDB":"/media/eva/Eva Data/icmr_results/paris106k/features",
+	"path_images":"/media/eva/Eva Data/Datasets/Paris_dataset/images",
+	"path_queries":"/media/eva/Eva Data/Datasets/Paris_dataset/images",
+	"keyframesHoritzontal5k":"/home/eva/Workspace/icmr_pipeline/paris/list_paris_horitzontal.txt",
+	"keyframesVertical5k":"/home/eva/Workspace/icmr_pipeline/paris/list_paris_vertical.txt",
+	"path_gt_files":"/media/eva/Eva Data/Datasets/Paris_dataset/gt_data",
+	"keyframesHoritzontal":"/home/eva/Workspace/icmr_pipeline/paris106k/total_paris_horitzontal.txt",
+	"keyframesVertical":"/home/eva/Workspace/icmr_pipeline/paris106k/total_paris_vertical.txt",
+	"input_size":[25,3, 336, 256],
+	"path_output":"/media/eva/Eva Data/icmr_results/paris106k",
+	"path_models":"/media/eva/Eva Data/icmr_results/paris",
+	"dataset":"paris"
+}

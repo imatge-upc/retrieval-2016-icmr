@@ -1,0 +1,5 @@
+*.pyc
+*.so
+index.dat
+/build
+/invidx/_invidx.cpp

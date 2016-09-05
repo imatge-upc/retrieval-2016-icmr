@@ -1,0 +1,8 @@
+*.pyc
+*.swp
+*.txt
+*.caffemodel
+*.pkl
+*.npy
+notebooks/
+bow_pipeline/new_features

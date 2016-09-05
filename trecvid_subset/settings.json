@@ -1,0 +1,28 @@
+{
+	"Feature_extractors":
+		{
+			"vgg16":{
+				"prototxt":"/home/eva/Workspace/icmr_pipeline/bow_pipeline/models/vgg_16/vgg16_pool5.prototxt",
+				"caffemodel": "/home/eva/Workspace/icmr_pipeline/bow_pipeline/models/vgg_16/VGG_ILSVRC_16_layers.caffemodel",
+				"meanValue":[103.939, 116.779, 123.68]
+                },
+
+			"vgg19":{
+				"prototxt":"/home/eva/Workspace/icmr_pipeline/bow_pipeline/models/vgg_19/vgg19_pool5.prototxt",
+				"caffemodel": "/home/eva/Workspace/icmr_pipeline/bow_pipeline/models/vgg_19/VGG_ILSVRC_19_layers.caffemodel",
+				"meanValue":[103.939, 116.779, 123.68]
+                }
+		},
+	"Feature_extractor":"vgg16",
+	"Layer_output":["pool5"],
+	"featuresDB":"/media/eva/Eva Data/icmr_results/trecvid_subset/features",
+	"path_images":"/media/eva/Eva Data/Datasets/ins15/1_images/gt_images",
+	"path_gt_file":"/media/eva/Eva Data/Datasets/ins15/8_groundtruth/src/ins.search.qrels.tv13",
+	"keyframesHoritzontal":"/home/eva/Workspace/icmr_pipeline/trecvid_subset/list_trecvid_subset_horitzontal.txt",
+	"keyframesVertical":"/home/eva/Workspace/icmr_pipeline/trecvid_subset/list_trevcid_subset_vertical.txt",
+	"input_size":[6, 3, 768, 576],
+	"path_output":"/media/eva/Eva Data/icmr_results/trecvid_subset",
+	"path_models":"/media/eva/Eva Data/icmr_results/trecvid_subset",
+	"path_queries":"/media/eva/Eva Data/Datasets/ins15/topics/2013/tv13.example.images",
+	"dataset":"trecvid_subset"
+}
