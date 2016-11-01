@@ -75,6 +75,13 @@ Please cite with the following Bibtex code:
 } 
 ````
 
+## Best Poster Award at ICMR 2016
+
+![https://github.com/imatge-upc/retrieval-2016-icmr/raw/master/docs/icmr2016-poster.pdf](https://github.com/imatge-upc/retrieval-2016-icmr/blob/master/docs/poster700x583.png?raw=true)
+
+![Poster presenters](https://github.com/imatge-upc/retrieval-2016-icmr/blob/master/authors/PosterPresenters.jpg?raw=true)
+
+
 ## Code Instructions
 
 ### Description
