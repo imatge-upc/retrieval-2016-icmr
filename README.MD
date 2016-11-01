@@ -81,14 +81,14 @@ Please cite with the following Bibtex code:
 
 ![Poster presenters](https://github.com/imatge-upc/retrieval-2016-icmr/blob/master/authors/PosterPresenters.jpg?raw=true)
 
-### Talk on video
+## Talk on video
 
 <iframe src="https://player.vimeo.com/video/165478041" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/165478041">2016-05-Seminar-AmaiaSalvador-DeepVision</a> from <a href="https://vimeo.com/gpi">Image Processing Group</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 This talk also covers our paper ["Faster R-CNN features for Instance Search"](http://imatge-upc.github.io/retrieval-2016-deepvision/) at CVPR 2016 Workshop on DeepVision.
 
-### Slides
+## Slides
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/lZzb4HdY6OEZ01" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/xavigiro/convolutional-features-for-instance-search" title="Convolutional Features for Instance Search" target="_blank">Convolutional Features for Instance Search</a> </strong> from <strong><a href="//www.slideshare.net/xavigiro" target="_blank">Xavier Giro</a></strong> </div>
 
