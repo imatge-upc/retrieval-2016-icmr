@@ -49,7 +49,7 @@ This work proposes a simple instance retrieval pipeline based on encoding the co
 
 ## Publication
 
-[Paper link](http://delivery.acm.org/10.1145/2920000/2912061/p327-mohedano.pdf?ip=136.206.26.116&id=2912061&acc=ACTIVE%20SERVICE&key=846C3111CE4A4710%2E821500BF45340188%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&CFID=834414703&CFTOKEN=41969317&__acm__=1473100476_3638b03bb0e3539dc3119507f650f0cc)
+Find our paper at [ACM Digital Library](http://dx.doi.org/10.1145/2911996.2912061), [arXiv](https://arxiv.org/abs/1604.04653) and [DCU Doras](http://doras.dcu.ie/21175/).
 
 ![Image of the paper](https://raw.githubusercontent.com/evamohe/BoW_CNN_InstanceSearch/master/docs/image.jpeg?token=AHPpwMnNlL9yWB3Lt7588wSrlzim1tO4ks5X1vazwA%3D%3D)
 
