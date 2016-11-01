@@ -1,6 +1,6 @@
 # Bags of Local Convolutional Features for Scalable Instance Search
 
-| ![Logo Icmr][icmrlogo] | Paper accepted at [The Annual ACM International Conference on Multimedia Retrieval (ICMR) ](http://www.icmr2016.com/index.html)   |
+| ![Logo Icmr][icmrlogo] | Paper presented at [ACM International Conference on Multimedia Retrieval (ICMR) 2016](http://www.icmr2016.com/index.html)   |
 |:-:|---|
 
 [icmrlogo]: https://raw.githubusercontent.com/evamohe/BoW_CNN_InstanceSearch/master/authors/logo_1.jpg?token=AHPpwJEFJz9ZB5Q5RyZ_O6HuU7_S2yp-ks5X1vMgwA%3D%3D
